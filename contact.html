@@ -139,7 +139,7 @@ Author URL: http://w3layouts.com
                     </ul>
                 </div>
                 <div class="col-md-6 contact-right mt-md-0 mt-5 ps-lg-0">
-                    <form action="https://script.google.com/macros/s/AKfycbzvwrMpNiaQ_8ihl2lbcqWSa6VgUwJ9lxEIuNsnqaNrVc9lnj6tInQMs3DIzFO5PTYu/exec" class="submit-form" method="POST">
+                    <form action="https://formspree.io/f/xbjbjoeq" method="POST">
                         <div class="input-grids">
                             <input type="text" name="Name" id="Name" placeholder="Your Name*"
                                 class="contact-input" required="" />
@@ -291,12 +291,12 @@ Author URL: http://w3layouts.com
 
 
     <script>
-        $(".submit-form").submit((e)=>{
+        $("").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbzvwrMpNiaQ_8ihl2lbcqWSa6VgUwJ9lxEIuNsnqaNrVc9lnj6tInQMs3DIzFO5PTYu/exec",
-                data:$(".submit-form").serialize(),
-                method:"post",
+                url:"",
+                data:$("").serialize(),
+                method:"",
                 success:function (response){
                     alert("Form submitted successfully")
                     window.location.reload()
